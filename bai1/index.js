@@ -48,6 +48,8 @@ function tuyensinh() {
   var kqua = "";
   if (diem1 > 0 && diem2 > 0 && diem3 > 0 && tongSoDiem >= diemChuan) {
     kqua = "Đậu";
+  } else if (diem1 == 0 || diem2 == 0 || diem3 == 0) {
+    kqua = "Rớt do có ít nhất 1 môn 0 điểm";
   } else {
     kqua = "Rớt";
   }
